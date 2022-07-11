@@ -1,0 +1,190 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap");
+
+:root {
+   --primary-color: #ff5722;
+   --secundary-color: #65eeb7;
+
+   --off-white: #f4f4f4;
+   --dark-grey: #474744;
+
+   font-size: 62.5%;
+
+   --nav-height: 6rem;
+}
+
+html,
+body {
+   width: 100%;
+   height: 100%;
+}
+
+body {
+   font-family: "Signika", sans-serif;
+   font-size: 1.6rem;
+   text-align: center;
+
+   overflow: overlay;
+}
+
+.container {
+   width: 192rem;
+   margin-inline: auto;
+   padding-inline: 20rem;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   font-size: 2rem;
+   text-decoration: none;
+}
+
+h4 {
+   font-size: 2rem;
+   font-weight: 400;
+}
+
+img {
+   max-height: 100%;
+}
+
+/*----------------NAVIGATION-----------------*/
+
+nav {
+   width: 100vw;
+   height: 6rem;
+   background-color: var(--off-white);
+
+   display: flex;
+
+   position: fixed;
+   z-index: 100;
+   top: 0;
+}
+
+nav .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: nowrap;
+}
+
+nav .navOptions {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   gap: 1rem;
+}
+
+nav .navPerfil {
+   height: 3.5rem;
+}
+
+nav .logo {
+   height: 5rem;
+}
+
+/*----------------MY PROFILE-----------------*/
+
+#myProfile {
+   padding-top: calc(3rem + var(--nav-height));
+   padding-bottom: 10rem;
+}
+
+#myPorfile .container {
+   display: flex;
+   align-items: center;
+}
+
+#myProfile header {
+   margin-bottom: 3rem;
+}
+
+#myProfile .content {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   gap: 3rem;
+}
+
+#myProfile .profile {
+   width: 150rem;
+   height: 25rem;
+
+   background-color: var(--off-white);
+}
+
+.calender .daySchedules {
+   width: 40rem;
+   height: 100%;
+
+   background-color: var(--dark-grey);
+}
+
+#myProfile .calender {
+   width: 150rem;
+   height: 80rem;
+
+   background-color: var(--off-white);
+
+   display: flex;
+   justify-content: space-between;
+}
+
+.calender .month {
+   width: 100rem;
+   height: 100%;
+   background-color: var(--off-white);
+
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.month .day {
+   width: 14rem;
+   height: 10.9rem;
+
+   font-size: 2rem;
+   font-weight: 300;
+
+   background-color: white;
+   border: 0.1rem solid var(--off-white);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+}
+
+.month .dayoff {
+   width: 14rem;
+   height: 10.9rem;
+
+   font-size: 2rem;
+   font-weight: 300;
+
+   background-color: white;
+   border: 0.1rem solid var(--off-white);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+}
+
+.month .week {
+   width: 14rem;
+   height: 3rem;
+   background-color: white;
+   border: 0.1rem solid var(--off-white);
+}
