@@ -85,6 +85,10 @@ img {
    max-height: 100%;
 }
 
+svg {
+   max-height: 100%;
+}
+
 /*----------------NAVIGATION-----------------*/
 
 nav {
@@ -97,6 +101,18 @@ nav {
    position: fixed;
    z-index: 100;
    top: 0;
+}
+
+nav .logo svg {
+   width: fit-content;
+   padding-block: 0.5rem;
+}
+
+.navOptions a {
+   height: 6rem;
+
+   display: flex;
+   align-items: center;
 }
 
 nav .container {
@@ -152,7 +168,7 @@ nav .logo {
 }
 
 #myProfile .profile {
-   width: 150rem;
+   width: 100%;
    height: 25rem;
    padding-inline: 10rem;
    padding-block: 5rem;
@@ -168,7 +184,7 @@ nav .logo {
 }
 
 #myProfile .schedules {
-   width: 150rem;
+   width: 100%;
    height: 25rem;
    padding-inline: 10rem;
    padding-block: 5rem;
@@ -190,6 +206,7 @@ nav .logo {
 }
 
 #myProfile .calender {
+   width: 100%;
    height: 80rem;
    box-shadow: var(--shadow);
 
@@ -197,7 +214,7 @@ nav .logo {
 }
 
 .calender .daySchedules {
-   width: 40rem;
+   width: 25%;
    height: 100%;
    padding-inline: 3rem;
    padding-block: 2rem;
@@ -215,7 +232,7 @@ nav .logo {
 }
 
 .calender .month {
-   width: 110rem;
+   width: 75%;
    height: 100%;
 
    /* background-color: var(--off-white); */
