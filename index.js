@@ -17,4 +17,8 @@ app.get("/pro", (req, res) => {
    res.render("myaccountpro");
 });
 
+app.get("/searchresult", (req, res) => {
+   res.render("search");
+});
+
 app.listen(PORT, () => console.log("O servidor está funcionando corretamente"));

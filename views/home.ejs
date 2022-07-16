@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="/styles/main.css" />
-      <title>Home FIND</title>
+      <title>Pagina inicial FIND</title>
    </head>
    <body>
       <nav>
@@ -144,9 +144,9 @@
             </a>
             <div class="navOptions">
                <ul class="navOptions">
-                  <li><a href="">Inicio</a></li>
-                  <li><a href="">Sobre</a></li>
-                  <li><a href="">Vantagens</a></li>
+                  <li><a href="#home">Inicio</a></li>
+                  <li><a href="#about">Sobre</a></li>
+                  <li><a href="#benefits">Vantagens</a></li>
                </ul>
                <a class="button" href="#">Quero ser FIND</a>
             </div>
@@ -168,16 +168,20 @@
                         <label for="selectpro"> Profissão </label>
                         <select name="profession" id="selectpro">
                            <option value="">Selecione uma profissão</option>
+                           <option value="">Dentista</option>
+                           <option value="">Barbeiro</option>
+                           <option value="">Mecânico</option>
                         </select>
                      </div>
                      <div class="select">
                         <label for="selectcity"> Cidade </label>
                         <select name="city" id="selectcity">
                            <option value="">Cidade/UF</option>
+                           <option value="JP/PB">Joao Pessoa/PB</option>
                         </select>
                      </div>
                   </div>
-                  <a class="button" href="">ENCONTRAR</a>
+                  <a class="button" href="/searchresult">ENCONTRAR</a>
                </div>
             </div>
          </div>
@@ -190,27 +194,68 @@
                   <h1>Sobre nós</h1>
                </header>
                <div class="aboutme">
+                  <img src="/assets/fincompany.png" alt="" />
                   <div>
-                     <h4>O que é o FIND?</h4>
+                     <h2>Quem somos?</h2>
                      <p>
-                        Lorem ipsum dolor sit amet. Et dolorem repudiandae aut ratione deserunt ex aliquam
-                        itaque qui quos mollitia 33 quasi obcaecati eos sapiente placeat. In voluptatem
-                        eligendi hic Quis sunt quo dicta officia est sunt deserunt sed perspiciatis similique
-                        sed odio delectus? Vel nihil tempore id numquam possimus quo neque nihil qui officiis
-                        tempora. <br />
-                        Ea possimus quas 33 laboriosam eos officiis quas eos omnis optio aut iusto quia vel
-                        nihil expedita et earum officia. Aut doloremque officia 33 iusto omnis et autem velit
-                        ut voluptatibus voluptatum qui ullam quae est tempore maxime vel officia officiis.
-                        <br />
-                        Non quaerat tempore qui fugiat corrupti ut delectus nemo eum enim repellat aut galisum
-                        alias! At Quis asperiores sed amet harum vel similique pariatur. Aut molestias
-                        perspiciatis est magnam voluptatibus et suscipit inventore.
+                        Somos a Find,um sistema de Web site especializado em atendimento ao público de
+                        diversas áreas de trabalho. Fazemos com o que os clientes tenha mais tranquilidade,
+                        podendo marca o seu dia e horário há qualquer momento. Entramos no mercado no ano de
+                        2022, trazendo inovação e fazendo com que os cliente tenha mais melhoria no
+                        atendimento na cidade de João Pessoa e regiões da cidade.
+                     </p>
+                     <h2>Como Funciona?</h2>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur suscipit ex ea
+                        atque. Minus ullam tenetur nostrum eius amet distinctio repudiandae. Officiis at sit
+                        mollitia nam amet sunt ullam porro?
                      </p>
                   </div>
-                  <img src="/assets/fincompany.png" alt="" />
                </div>
             </div>
          </div>
       </section>
+
+      <section id="benefits">
+         <div class="container">
+            <div class="content">
+               <header>
+                  <h1>Vantagens</h1>
+               </header>
+               <div class="profits">
+                  <div class="profit">
+                     <h2>Agendamento simplificado</h2>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit nihil veniam
+                        sit praesentium quo, repudiandae voluptate, laboriosam reiciendis ex eveniet inventore
+                        exercitationem neque aut, ut dolores maiores possimus porro.
+                     </p>
+                  </div>
+                  <div class="profit">
+                     <h2>Mais visibilidade</h2>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit nihil veniam
+                        sit praesentium quo, repudiandae voluptate, laboriosam reiciendis ex eveniet inventore
+                        exercitationem neque aut, ut dolores maiores possimus porro.
+                     </p>
+                  </div>
+                  <div class="profit">
+                     <h2>Gerenciador de agendamentos</h2>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit nihil veniam
+                        sit praesentium quo, repudiandae voluptate, laboriosam reiciendis ex eveniet inventore
+                        exercitationem neque aut, ut dolores maiores possimus porro.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container"></div>
+      </footer>
+
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="/js/main.js"></script>
    </body>
 </html>
