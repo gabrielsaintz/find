@@ -9,16 +9,20 @@ app.get("/home", (req, res) => {
    res.render("home");
 });
 
-app.get("/client", (req, res) => {
+app.get("/profileclient", (req, res) => {
    res.render("myaccountclient");
 });
 
-app.get("/pro", (req, res) => {
+app.get("/profilepro", (req, res) => {
    res.render("myaccountpro");
 });
 
 app.get("/searchresult", (req, res) => {
    res.render("search");
+});
+
+app.get("/schedule", (req, res) => {
+   res.render("schedules");
 });
 
 app.listen(PORT, () => console.log("O servidor está funcionando corretamente"));
