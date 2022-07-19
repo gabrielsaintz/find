@@ -25,4 +25,8 @@ app.get("/schedule", (req, res) => {
    res.render("schedules");
 });
 
+app.get("/createaccount", (req, res) => {
+   res.render("createaccount");
+});
+
 app.listen(PORT, () => console.log("O servidor está funcionando corretamente"));

@@ -17,5 +17,9 @@ ScrollReveal({
  #benefits .profit,
  #professionals,
  #professionals .professional,
- #myProfile
+ #myProfile,
+ #professionalschedule,
+ #professionalschedule .professional,
+ #professionalschedule .scheduleok img,
+ #professionalschedule .formSchedule
  `);
