@@ -1,4 +1,6 @@
 # FIND
+<p>▶️</p>
+
 <h1>Projeto integrador do <a href="http://www.fullstackjavascript.com.br/#">Curso FullStack JavaScript</a></h1>
 <h2>O que é o FIND?</h2>
 <p>O FIND é uma ideia de projeto web bolada pelo meu grupo do <a href="http://www.fullstackjavascript.com.br/#">Curso FullStack JavaScript</a>.</p>
