@@ -14,6 +14,7 @@
 
    --off-white: hsl(0, 0%, 96%);
    --dark-grey: hsl(60, 2%, 27%);
+   --off-black: hsl(0, 0%, 8%);
 
    --shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 
@@ -57,8 +58,9 @@ li {
 }
 
 a {
-   font-size: 2.4rem;
-   color: black;
+   font-size: 2rem;
+   font-weight: 600;
+   color: var(--off-black);
    text-decoration: none;
 }
 
@@ -123,7 +125,7 @@ h4 {
 label {
    font-size: 2rem;
    line-height: 2.4rem;
-   font-weight: 600;
+   font-weight: 300;
 }
 
 img {
@@ -142,7 +144,7 @@ input {
 
    border: none;
 
-   color: var(--primary-color);
+   color: var(--off-black);
    box-shadow: var(--shadow);
    background-color: var(--off-white);
 
@@ -259,6 +261,10 @@ nav .logo {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+}
+
+#home label {
+   font-weight: 400;
 }
 
 /*----------------ABOUT-----------------*/
@@ -496,6 +502,7 @@ footer {
    margin-block: 3rem;
 
    display: flex;
+   gap: 6rem;
 }
 
 #professionalschedule .scheduleok h2 {
@@ -503,16 +510,16 @@ footer {
 }
 
 .scheduleok {
-   width: 60%;
+   padding: 3rem;
+   width: 50%;
 }
 
 .scheduleok img {
-   width: 100%;
-   height: fit-content;
+   height: 70%;
 }
 
 #professionalschedule form {
-   width: 40%;
+   width: 50%;
 
    text-align: left;
    padding: 3rem;
@@ -523,7 +530,7 @@ footer {
 #professionalschedule form label {
    display: flex;
    flex-direction: column;
-   color: var(--dark-grey);
+   color: var(--off-black);
 }
 
 #professionalschedule .professional,
@@ -583,10 +590,6 @@ footer {
    gap: 2rem;
 }
 
-.formSchedule form h3 {
-   color: var(--dark-grey);
-}
-
 .formSchedule form div {
    display: flex;
    gap: 2rem;
@@ -605,6 +608,101 @@ footer {
 
 /*----------------CREATEACCOUNT/LOGIN-----------------*/
 #createAccount {
-   padding-top: calc(3rem + var(--nav-height));
-   height: 100vh;
+   padding-top: calc(6rem + var(--nav-height));
+   height: 130vh;
+}
+
+#createAccount .content {
+   display: flex;
+   gap: 6rem;
+}
+
+#createAccount form label,
+#createAccount .content form,
+#createAccount .content div:nth-child(2) {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+
+   background-color: white;
+}
+
+#createAccount .content div:nth-child(1),
+#createAccount .content div:nth-child(2) {
+   width: 50%;
+   height: 80rem;
+}
+
+#createAccount .content div:nth-child(2) {
+   gap: 2.5rem;
+   border-radius: 2rem;
+   box-shadow: var(--shadow);
+}
+
+#createAccount .content div:nth-child(1) img {
+   height: 70%;
+}
+
+#createAccount .content form {
+   align-items: center;
+}
+
+#createAccount .content div:nth-child(1) ul li {
+   font-size: 2rem;
+   font-weight: 300;
+   padding-left: 6rem;
+}
+
+#createAccount .content div:nth-child(1) ul,
+#createAccount form label {
+   text-align: left;
+   font-weight: 300;
+}
+
+#createAccount form p {
+   font-size: 1.6rem;
+   font-weight: 600;
+   color: var(--primary-color);
+   width: 50%;
+}
+
+#createAccount form label input {
+   width: 40rem;
+   padding-inline: 1rem;
+
+   color: var(--off-black);
+
+   box-shadow: none;
+}
+
+#createAccount .content div:nth-child(2) div.line {
+   display: flex;
+
+   margin-inline: auto;
+
+   width: 50%;
+   height: 0.2rem;
+
+   background-color: var(--off-white);
+}
+
+#createAccount .buttonGoogle {
+   width: 40rem;
+   height: 5rem;
+   padding-inline: 1rem;
+   margin-inline: auto;
+
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+
+   font-size: 2rem;
+   font-weight: 300;
+
+   border: 2px solid var(--off-white);
+   border-radius: 1rem;
+}
+
+#createAccount .buttonGoogle svg {
+   width: 3rem;
 }
