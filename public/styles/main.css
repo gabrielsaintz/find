@@ -596,12 +596,12 @@ footer {
 }
 
 .formSchedule form div input {
-   width: 20rem;
+   width: 100%;
 }
 
 .formSchedule input,
 .formSchedule select {
-   width: 42rem;
+   width: 90%;
    color: var(--dark-grey);
    box-shadow: none;
 }
