@@ -17,6 +17,10 @@ app.get("/profilepro", (req, res) => {
    res.render("myaccountpro");
 });
 
+app.get("/myacc", (req, res) => {
+   res.render("myacc");
+});
+
 app.get("/searchresult", (req, res) => {
    res.render("search");
 });
@@ -35,6 +39,10 @@ app.get("/login", (req, res) => {
 
 app.get("/recoverpassword", (req, res) => {
    res.render("recoverpassword");
+});
+
+app.get("/createaccpro", (req, res) => {
+   res.render("createaccpro");
 });
 
 app.listen(PORT, () => console.log("O servidor está funcionando corretamente"));

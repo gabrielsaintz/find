@@ -62,6 +62,12 @@ a {
    font-weight: 600;
    color: var(--off-black);
    text-decoration: none;
+
+   transition: color 300ms;
+}
+
+nav a:hover {
+   color: var(--primary-color);
 }
 
 .button {
@@ -81,7 +87,7 @@ a {
 
    border-radius: 1rem;
 
-   transition: background 0.2s;
+   transition: background 300ms;
 }
 
 .button:hover {
@@ -90,6 +96,7 @@ a {
 
 p {
    font-size: 2rem;
+   font-weight: 300;
 }
 
 h1 {
@@ -645,11 +652,15 @@ footer {
    height: 4rem;
 }
 
+nav .navOptions svg path,
 #professionalschedule .options svg path,
 #professionals .options svg path {
    fill: var(--dark-grey);
+
+   transition: fill 200ms;
 }
 
+nav .navOptions svg:hover path,
 #professionalschedule .options svg:hover path,
 #professionals .options svg:hover path {
    fill: #ff5722;
@@ -694,23 +705,30 @@ footer {
 
 /*----------------CREATEACCOUNT/LOGIN-----------------*/
 
-#recoverpassword,
+#myAcc,
+#createAccPro,
+#recoverPassword,
 #login,
 #createAccount {
    padding-top: calc(6rem + var(--nav-height));
    height: 130vh;
 }
 
+#createAccPro .content,
 #login .content,
 #createAccount .content {
    display: flex;
    gap: 6rem;
 }
 
+#createAccPro .content,
 #login .content {
    justify-content: center;
 }
 
+#createAccPro .content form,
+#createAccPro form label,
+#createAccPro .content div,
 #login .content form,
 #login form label,
 #login .content div,
@@ -728,15 +746,17 @@ footer {
 #createAccount .content div:nth-child(2) {
    width: 45%;
    height: 75rem;
-   padding-top: 3rem;
+   padding-block: 3rem;
 }
 
+#createAccPro .content div:nth-child(1),
 #login .content div:nth-child(1) {
    width: 45%;
-   height: 75rem;
-   padding-top: 6rem;
+   height: fit-content;
+   padding-block: 6rem;
 }
 
+#createAccPro .content div:nth-child(1),
 #login .content div:nth-child(1),
 #createAccount .content div:nth-child(2) {
    gap: 2rem;
@@ -748,6 +768,7 @@ footer {
    height: 70%;
 }
 
+#createAccPro .content form,
 #login .content form,
 #createAccount .content form {
    align-items: center;
@@ -759,6 +780,7 @@ footer {
    padding-left: 6rem;
 }
 
+#createAccPro form label,
 #login form label,
 #createAccount .content div:nth-child(1) ul,
 #createAccount form label {
@@ -774,6 +796,7 @@ footer {
    width: 50%;
 }
 
+#createAccPro form label input,
 #login form label input,
 #createAccount form label input {
    width: 35rem;
@@ -792,6 +815,15 @@ footer {
 
    width: 50%;
    height: 0.2rem;
+
+   background-color: var(--off-white);
+}
+
+#myAcc .accOptions div.line {
+   width: 100%;
+   height: 0.2rem;
+
+   display: flex;
 
    background-color: var(--off-white);
 }
@@ -819,26 +851,53 @@ footer {
    width: 3rem;
 }
 
+#createAccPro .button,
 #createAccount .button,
 #login .button {
    width: 20rem;
    justify-content: center;
 }
 
+#createAccPro .button,
 #login .button {
    margin-top: 4rem;
 }
 
-#recoverpassword h1,
+#createAccPro header h1,
+#recoverPassword h1,
 #login .content h1 {
-   margin-bottom: 6rem;
+   margin-bottom: 3rem;
 }
 
-#recoverpassword .button {
+#recoverPassword .button {
    margin-top: 3rem;
 }
 
-#recoverpassword p {
+#recoverPassword p {
    font-weight: 300;
    font-size: 1.6rem;
+}
+
+#myAcc .accOptions {
+   width: 45%;
+   height: fit-content;
+   border-radius: 2rem;
+   margin-inline: auto;
+
+   background-color: white;
+}
+
+#myAcc .accOptions .option {
+   text-align: left;
+   padding: 2rem;
+}
+
+#myAcc .accOptions a h3 {
+   font-weight: 500;
+   color: var(--dark-grey);
+   transition: color 300ms;
+}
+
+#myAcc .accOptions a:hover h3 {
+   color: var(--primary-color);
 }

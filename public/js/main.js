@@ -30,5 +30,10 @@ ScrollReveal({
  #professionalschedule,
  #professionalschedule .professional,
  #professionalschedule .scheduleok img,
- #professionalschedule .formSchedule
+ #professionalschedule .formSchedule,
+ #myAcc,
+ #login,
+ #recoverPassword,
+ #createAccPro,
+ #createAccount
  `);
