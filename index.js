@@ -29,4 +29,12 @@ app.get("/createaccount", (req, res) => {
    res.render("createaccount");
 });
 
+app.get("/login", (req, res) => {
+   res.render("login");
+});
+
+app.get("/recoverpassword", (req, res) => {
+   res.render("recoverpassword");
+});
+
 app.listen(PORT, () => console.log("O servidor está funcionando corretamente"));

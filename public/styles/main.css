@@ -141,6 +141,7 @@ input {
    width: 30rem;
    height: 5rem;
    border-radius: 1rem;
+   padding-inline: 1rem;
 
    border: none;
 
@@ -410,6 +411,7 @@ nav .menu a {
    height: 25rem;
    padding-inline: 10rem;
    padding-block: 5rem;
+   border-radius: 2rem;
 
    background-color: white;
    box-shadow: var(--shadow);
@@ -465,6 +467,8 @@ nav .menu a {
 #myProfile .calender {
    width: 100%;
    height: 80rem;
+   border-radius: 2rem;
+
    box-shadow: var(--shadow);
 
    display: flex;
@@ -475,6 +479,7 @@ nav .menu a {
    height: 100%;
    padding-inline: 3rem;
    padding-block: 2rem;
+   border-radius: 2rem 0 0 2rem;
 
    background-color: white;
 
@@ -530,7 +535,7 @@ nav .menu a {
 /*----------------FOOTER-----------------*/
 
 footer {
-   height: 35rem;
+   height: 30rem;
    background-color: var(--dark-grey);
 }
 
@@ -611,6 +616,8 @@ footer {
    height: 20rem;
    padding: 3rem;
 
+   border-radius: 2rem;
+
    background-color: white;
    box-shadow: var(--shadow);
 
@@ -658,6 +665,7 @@ footer {
 
 .formSchedule form {
    height: fit-content;
+   border-radius: 2rem;
 
    display: flex;
    flex-direction: column;
@@ -685,16 +693,27 @@ footer {
 }
 
 /*----------------CREATEACCOUNT/LOGIN-----------------*/
+
+#recoverpassword,
+#login,
 #createAccount {
    padding-top: calc(6rem + var(--nav-height));
    height: 130vh;
 }
 
+#login .content,
 #createAccount .content {
    display: flex;
    gap: 6rem;
 }
 
+#login .content {
+   justify-content: center;
+}
+
+#login .content form,
+#login form label,
+#login .content div,
 #createAccount form label,
 #createAccount .content form,
 #createAccount .content div:nth-child(2) {
@@ -707,13 +726,20 @@ footer {
 
 #createAccount .content div:nth-child(1),
 #createAccount .content div:nth-child(2) {
-   width: 50%;
-   height: 80rem;
+   width: 45%;
+   height: 75rem;
+   padding-top: 3rem;
+}
+
+#login .content div:nth-child(1) {
+   width: 45%;
+   height: 75rem;
    padding-top: 6rem;
 }
 
+#login .content div:nth-child(1),
 #createAccount .content div:nth-child(2) {
-   gap: 2.5rem;
+   gap: 2rem;
    border-radius: 2rem;
    box-shadow: var(--shadow);
 }
@@ -722,6 +748,7 @@ footer {
    height: 70%;
 }
 
+#login .content form,
 #createAccount .content form {
    align-items: center;
 }
@@ -732,6 +759,7 @@ footer {
    padding-left: 6rem;
 }
 
+#login form label,
 #createAccount .content div:nth-child(1) ul,
 #createAccount form label {
    text-align: left;
@@ -739,14 +767,16 @@ footer {
 }
 
 #createAccount form p {
-   font-size: 1.6rem;
-   font-weight: 600;
+   margin-top: 1.5rem;
+   font-size: 1.4rem;
+   font-weight: 400;
    color: var(--primary-color);
    width: 50%;
 }
 
+#login form label input,
 #createAccount form label input {
-   width: 40rem;
+   width: 35rem;
    padding-inline: 1rem;
 
    color: var(--off-black);
@@ -754,6 +784,7 @@ footer {
    box-shadow: none;
 }
 
+#login .content div div.line,
 #createAccount .content div:nth-child(2) div.line {
    display: flex;
 
@@ -765,8 +796,9 @@ footer {
    background-color: var(--off-white);
 }
 
+#login .buttonGoogle,
 #createAccount .buttonGoogle {
-   width: 40rem;
+   width: 35rem;
    height: 5rem;
    padding-inline: 1rem;
    margin-inline: auto;
@@ -782,6 +814,31 @@ footer {
    border-radius: 1rem;
 }
 
+#login .buttonGoogle svg,
 #createAccount .buttonGoogle svg {
    width: 3rem;
+}
+
+#createAccount .button,
+#login .button {
+   width: 20rem;
+   justify-content: center;
+}
+
+#login .button {
+   margin-top: 4rem;
+}
+
+#recoverpassword h1,
+#login .content h1 {
+   margin-bottom: 6rem;
+}
+
+#recoverpassword .button {
+   margin-top: 3rem;
+}
+
+#recoverpassword p {
+   font-weight: 300;
+   font-size: 1.6rem;
 }
