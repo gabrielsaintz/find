@@ -65,16 +65,16 @@ a {
 }
 
 .button {
-   width: 25rem;
+   width: fit-content;
    height: 5rem;
-   padding: 1rem;
+   padding-inline: 3rem;
    margin-inline: auto;
 
    color: white;
    background-color: var(--primary-color);
 
    display: flex;
-   justify-content: center;
+   align-items: center;
 
    font-weight: 600;
    font-size: 2.4rem;
@@ -153,6 +153,15 @@ input {
    font-size: 2rem;
 }
 
+.line {
+   display: flex;
+
+   width: 90%;
+   height: 0.2rem;
+
+   background-color: var(--off-white);
+}
+
 /*----------------NAVIGATION-----------------*/
 
 nav {
@@ -168,8 +177,9 @@ nav {
 }
 
 nav a.button {
-   width: 20rem;
+   width: fit-content;
    height: 5rem;
+   padding-inline: 3rem;
 
    color: white;
    background-color: var(--primary-color);
@@ -182,7 +192,7 @@ nav .logo svg {
    padding-block: 0.5rem;
 }
 
-.navOptions a {
+nav ul.navOptions a {
    height: 6rem;
 
    display: flex;
@@ -212,6 +222,35 @@ nav .logo {
    height: 5rem;
 }
 
+nav .menu {
+   display: none;
+}
+
+nav .menuon {
+   width: 20rem;
+   height: fit-content;
+   padding: 1rem;
+   margin-right: 20rem;
+   top: var(--nav-height);
+
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+
+   position: fixed;
+   right: 0;
+   z-index: 100;
+
+   background-color: white;
+   box-shadow: var(--shadow);
+
+   text-align: left;
+}
+
+nav .menu a {
+   font-weight: 400;
+}
+
 /*----------------HOME-----------------*/
 #home {
    height: 100vh;
@@ -236,7 +275,7 @@ nav .logo {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   gap: 1rem;
+   gap: 2rem;
 
    background-color: rgba(255, 255, 255, 0.8);
    border-radius: 2rem;
@@ -379,6 +418,36 @@ nav .logo {
    justify-content: space-between;
 }
 
+#myProfile .schedules {
+   height: fit-content;
+
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 2rem;
+}
+
+#myProfile .schedules ul {
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+#myProfile .schedules .schedule {
+   width: 100%;
+   height: fit-content;
+   padding: 2rem;
+
+   background-color: white;
+   box-shadow: var(--shadow);
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
 #myProfile .profile {
    font-size: 2rem;
    text-align: left;
@@ -470,6 +539,7 @@ footer {
    padding-top: calc(3rem + var(--nav-height));
    height: fit-content;
 }
+
 #professionals {
    padding-top: calc(3rem + var(--nav-height));
    height: 100vh;
@@ -493,11 +563,13 @@ footer {
    display: flex;
    flex-direction: column;
    align-items: center;
+
+   height: fit-content;
 }
 
 #professionalschedule .formSchedule {
    width: 80%;
-   height: 80rem;
+   height: fit-content;
 
    margin-block: 3rem;
 
@@ -515,7 +587,7 @@ footer {
 }
 
 .scheduleok img {
-   height: 70%;
+   width: 100%;
 }
 
 #professionalschedule form {
@@ -585,9 +657,15 @@ footer {
 }
 
 .formSchedule form {
+   height: fit-content;
+
    display: flex;
    flex-direction: column;
    gap: 2rem;
+}
+
+.formSchedule form a.button {
+   margin-inline: auto;
 }
 
 .formSchedule form div {
@@ -631,6 +709,7 @@ footer {
 #createAccount .content div:nth-child(2) {
    width: 50%;
    height: 80rem;
+   padding-top: 6rem;
 }
 
 #createAccount .content div:nth-child(2) {

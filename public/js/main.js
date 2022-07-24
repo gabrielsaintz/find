@@ -1,3 +1,12 @@
+function menuon() {
+   let menu = document.querySelector("nav .menu");
+
+   if (menu.classList.contains("menuon")) {
+      return menu.classList.remove("menuon");
+   }
+   menu.classList.add("menuon");
+}
+
 ScrollReveal({
    origin: "top",
    distance: "30px",

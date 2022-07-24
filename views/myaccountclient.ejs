@@ -182,11 +182,20 @@
                   </a>
                </li>
                <li>
-                  <a href="#">
+                  <a href="#" onclick="menuon()">
                      <img class="navPerfil" src="/assets/perfil-do-utilizador.png" alt="foto de perfil" />
                   </a>
                </li>
             </ul>
+
+            <div class="menu">
+               <a href="/profileclient">Meu perfil</a>
+               <a href="">Minha conta</a>
+               <div class="line"></div>
+               <a href="">Assinatura FIND</a>
+               <div class="line"></div>
+               <a href="/home">Sair da conta</a>
+            </div>
          </div>
       </nav>
 
@@ -218,7 +227,18 @@
                <div class="schedules">
                   <h2>Agendamentos:</h2>
                   <ul>
-                     <li></li>
+                     <li>
+                        <div class="schedule">
+                           <h3>Agendamento 1</h3>
+                           <p>dados do agendamento</p>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="schedule">
+                           <h3>Agendamento 2</h3>
+                           <p>dados do agendamento</p>
+                        </div>
+                     </li>
                   </ul>
                </div>
                <div>
@@ -228,5 +248,8 @@
             </div>
          </div>
       </section>
+
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="./js/main.js"></script>
    </body>
 </html>
