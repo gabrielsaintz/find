@@ -477,6 +477,7 @@ nav .menu a {
    border-radius: 2rem;
 
    box-shadow: var(--shadow);
+   background-color: white;
 
    display: flex;
 }
@@ -487,8 +488,6 @@ nav .menu a {
    padding-inline: 3rem;
    padding-block: 2rem;
    border-radius: 2rem 0 0 2rem;
-
-   background-color: white;
 
    font-size: 2rem;
    text-align: left;
@@ -523,19 +522,18 @@ nav .menu a {
 .month .today {
    font-weight: 700;
    color: var(--primary-color);
-   background-color: white;
+
    border: 0.1rem solid var(--off-white);
 }
 
 .month .day,
 .month .week {
-   background-color: white;
    border: 0.1rem solid var(--off-white);
 }
 
 .month .dayoff {
    color: white;
-   background-color: white;
+
    border: 0.1rem solid var(--off-white);
 }
 
