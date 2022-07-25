@@ -170,6 +170,10 @@ input {
    background-color: var(--off-white);
 }
 
+.formSchedule form div.line {
+   width: 100%;
+}
+
 /*----------------NAVIGATION-----------------*/
 
 nav {
@@ -191,6 +195,7 @@ nav a.button {
 
    color: white;
    background-color: var(--primary-color);
+   box-shadow: var(--shadow);
 
    font-size: 2rem;
 }
@@ -448,6 +453,7 @@ nav .menu a {
    width: 100%;
    height: fit-content;
    padding: 2rem;
+   border-radius: 2rem;
 
    background-color: white;
    box-shadow: var(--shadow);
